@@ -5,6 +5,18 @@ public class Dog
         String breed;
         String color;
 
+        //konstruktor I
+        public Dog()
+        {
+                //implementacja konstruktora
+        }
+
+        //konstruktor II
+        public Dog(String name)
+        {
+                //implmentacja konstruktora
+        }
+
         //metody
         void barking()
         {
