@@ -18,5 +18,16 @@ public class Person
                 System.out.println("Person name is: " + name + " and age: " + age);
                 this.name = name;
                 this.age = age;
+        }
+        
+        // Method isAdult() checking if user is adult or not
+        public void isAdult()
+        {
+                if(age >= 18)
+                {
+                        System.out.println(name + " is adult");
+                }else{
+                        System.out.println(name + " is not adult");
+                }                
         }        
 }
