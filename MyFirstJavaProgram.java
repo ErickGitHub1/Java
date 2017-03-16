@@ -4,6 +4,6 @@ public class MyFirstJavaProgram
         {
                 Dog myDog = new Dog("Misiek");
                 myDog.setAge(2);
-                myDog.getAge();
+                myDog.getAge();   
         }
 }
