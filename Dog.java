@@ -1,9 +1,9 @@
 public class Dog
 {
         // Pola
-        int age;
-        String breed;
-        String color;
+        private int age;
+        private String breed;
+        private String color;
         private static int numberInstances = 0;        
 
         // Konstruktor I
