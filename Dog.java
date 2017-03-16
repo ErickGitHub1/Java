@@ -4,17 +4,19 @@ public class Dog
         int age;
         String breed;
         String color;
+        private static int numberInstances = 0;        
 
         // Konstruktor I
         public Dog()
         {
-                // Implementacja konstruktora
+                Dog.addDog();
         }
 
         // Konstruktor II
         public Dog(String name)
         {
                 System.out.println("Your dog's name is: "+ name);
+                Dog.addDog();
         }
 
         // Metody
@@ -29,6 +31,16 @@ public class Dog
         {
                 System.out.println("Your dog's age is: " + this.age);
                 return this.age;
+        }
+
+        private static void addDog()
+        {
+                numberInstances++;    
+        }
+
+        public int numberDogs()
+        {
+                return numberInstances;
         }
 
         void barking()
