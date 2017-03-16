@@ -2,6 +2,6 @@ public class MyFirstJavaProgram
 {
         public static void main(String []args)
         {
-                System.out.println("Dziala ... ");
+                Dog myDog = new Dog("Misiek");
         }
 }
