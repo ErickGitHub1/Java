@@ -12,6 +12,6 @@ public class MyFirstJavaProgram
                 // calling methods on myDog1 object
                 myDog1.setAge(2);
                 myDog1.getAge();
-                System.out.println(myDog1.numberDogs());  
+                  
         }
 }
