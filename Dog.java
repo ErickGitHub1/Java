@@ -1,35 +1,48 @@
 public class Dog
 {
-        //pola
+        // Pola
         int age;
         String breed;
         String color;
 
-        //konstruktor I
+        // Konstruktor I
         public Dog()
         {
-                //implementacja konstruktora
+                // Implementacja konstruktora
         }
 
-        //konstruktor II
+        // Konstruktor II
         public Dog(String name)
         {
                 System.out.println("Your dog's name is: "+ name);
         }
 
-        //metody
+        // Metody
+        // Setter for age's dog 
+        public void setAge(int age)
+        {
+                this.age = age;        
+        }
+
+        // Getter for age's dog
+        public int getAge()
+        {
+                System.out.println("Your dog's age is: " + this.age);
+                return this.age;
+        }
+
         void barking()
         {
-                //implmenentacja metody
+                // Implmenentacja metody
         }
 
         void hungry()
         {
-                //implementacja metody
+                // Implementacja metody
         }
 
         void sleeping()
         {
-                //implementacja metody
+                // Implementacja metody
         }
 }
