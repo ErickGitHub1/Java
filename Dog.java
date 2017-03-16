@@ -14,7 +14,7 @@ public class Dog
         //konstruktor II
         public Dog(String name)
         {
-                //implmentacja konstruktora
+                System.out.println("Your dog's name is: "+ name);
         }
 
         //metody
