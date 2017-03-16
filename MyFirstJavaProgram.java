@@ -2,7 +2,10 @@ public class MyFirstJavaProgram
 {
         public static void main(String []args)
         {       
+                // me object
                 Person me = new Person("Erick", 22);
+                me.isAdult();
+
                 // myDog1 object
                 Dog myDog1 = new Dog("Misiek");
                 
