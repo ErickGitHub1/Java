@@ -23,13 +23,15 @@ public class Person
         }
         
         // Method isAdult() checking if user is adult or not
-        public void isAdult()
+        public boolean isAdult()
         {
                 if(age >= 18)
                 {
                         System.out.println(name + " is adult");
+                        return true;
                 }else{
                         System.out.println(name + " is not adult");
+                        return false;
                 }                
         }
         
