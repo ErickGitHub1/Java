@@ -43,9 +43,17 @@ public class Dog
                 return numberInstances;
         }
 
-        void barking()
+        
+        public void barking()
         {
-                // Implmenentacja metody
+                int bark = 0;
+                
+                while (bark < 20)
+                {
+                        bark++;        
+                }
+                
+                System.out.println("Barks: "+ bark);
         }
 
         void hungry()
