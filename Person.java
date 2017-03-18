@@ -4,7 +4,9 @@ public class Person
         private float height;
         private float weight;
         private String name;
-
+        
+        String [] names = {"Erick", "John", "Andrew", "Mathew", "Peter"};         
+                
         // Constructor1
         public Person(String name)
         {       
@@ -29,5 +31,15 @@ public class Person
                 }else{
                         System.out.println(name + " is not adult");
                 }                
+        }
+        
+        //Possible names for Kids
+        public void fewNamesForChild()
+        {
+                System.out.print("You can choose for your child name like:\n");
+                for(String name : names)
+                {
+                        System.out.println(name);
+                }
         }        
 }
