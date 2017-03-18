@@ -1,7 +1,13 @@
+import java.util.Scanner;
+
 public class MyFirstJavaProgram
 {
+        
         public static void main(String []args)
         {       
+                //variable for Dog's age
+                int age;   
+   
                 // me object
                 Person me = new Person("Erick", 22);
                                 
@@ -22,8 +28,13 @@ public class MyFirstJavaProgram
                 // myDog2 object
                 Dog myDog2 = new Dog("Maks");
 
+                //User enter for Dog's age
+                System.out.println("Enter your Dog's age: ");
+                Scanner reader = new Scanner(System.in);
+                age = reader.nextInt();
+        
                 // calling methods on myDog1 object
-                myDog1.setAge(2);
+                myDog1.setAge(age);
                 myDog1.getAge();
                   
         }
