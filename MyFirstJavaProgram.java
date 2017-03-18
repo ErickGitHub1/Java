@@ -4,11 +4,16 @@ public class MyFirstJavaProgram
         {       
                 // me object
                 Person me = new Person("Erick", 22);
-                me.isAdult();
-                
+                                
                 //second object person1
-                Person person1 = new Person("Peter", 35);
-                person1.fewNamesForChild();
+                Person person1 = new Person("Peter", 17);
+                
+                if(person1.isAdult() == true)
+                {       
+                        System.out.println("I suppose you can have kids.");
+                        person1.fewNamesForChild();  
+                }
+                
 
                 // myDog1 object
                 Dog myDog1 = new Dog("Misiek");
