@@ -8,6 +8,7 @@ public class MyFirstJavaProgram
 
                 // myDog1 object
                 Dog myDog1 = new Dog("Misiek");
+                myDog1.barking();
                 
                 // myDog2 object
                 Dog myDog2 = new Dog("Maks");
