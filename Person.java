@@ -2,7 +2,7 @@ public class Person
 {
         private int age;
         private float height;
-        private float weight;
+        private double weight;
         private String name;
         
         String [] names = {"Erick", "John", "Andrew", "Mathew", "Peter"};         
@@ -20,6 +20,19 @@ public class Person
                 System.out.println("Person name is: " + name + " and age: " + age);
                 this.name = name;
                 this.age = age;
+        }
+        
+        // Setter for weight
+        public void setWeight(double weight)
+        {
+                this.weight = weight;
+        }
+
+        // Getter for weight
+        public double getWeight()
+        {       
+                System.out.println("Your weight is: " + weight);
+                return weight;
         }
         
         // Method isAdult() checking if user is adult or not
@@ -43,5 +56,11 @@ public class Person
                 {
                         System.out.println(name);
                 }
-        }        
+        }
+
+        // Calculation BMI
+        //public void bmi()
+        //{
+        //        
+        //}       
 }
