@@ -14,8 +14,11 @@ public class MyFirstJavaProgram
                 //second object person1
                 Person person1 = new Person("Peter", 17);
 
-                person1.setWeight(34.9);
+                person1.setWeight(83.0);
                 person1.getWeight();
+                person1.setHeight(1.73);
+                person1.getHeight();
+                person1.bmi();
                 
                 if(person1.isAdult() == true)
                 {       
