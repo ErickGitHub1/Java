@@ -5,6 +5,10 @@ public class MyFirstJavaProgram
                 // me object
                 Person me = new Person("Erick", 22);
                 me.isAdult();
+                
+                //second object person1
+                Person person1 = new Person("Peter", 35);
+                person1.fewNamesForChild();
 
                 // myDog1 object
                 Dog myDog1 = new Dog("Misiek");
