@@ -1,7 +1,7 @@
 public class Person
 {
         private int age;
-        private float height;
+        private double height;
         private double weight;
         private String name;
         
@@ -34,6 +34,19 @@ public class Person
                 System.out.println("Your weight is: " + weight);
                 return weight;
         }
+
+        // Setter for height
+        public void setHeight(double height)
+        {
+                this.height = height;
+        }
+        
+        // Getter for height
+        public double getHeight()
+        {       
+                System.out.println("Your height is: " + height);
+                return height;
+        }
         
         // Method isAdult() checking if user is adult or not
         public boolean isAdult()
@@ -48,7 +61,7 @@ public class Person
                 }                
         }
         
-        //Possible names for Kids
+        //Possibly names for Kids
         public void fewNamesForChild()
         {
                 System.out.print("You can choose for your child name like:\n");
@@ -59,8 +72,10 @@ public class Person
         }
 
         // Calculation BMI
-        //public void bmi()
-        //{
-        //        
-        //}       
+        public void bmi()
+        {
+                double bmi = 0;
+                bmi = weight / Math.pow(height,2.0);
+                System.out.println("Your bmi is: " + bmi);                      
+        }       
 }
