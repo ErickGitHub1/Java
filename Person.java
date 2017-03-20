@@ -76,6 +76,29 @@ public class Person
         {
                 double bmi = 0;
                 bmi = weight / Math.pow(height,2.0);
-                System.out.println("Your bmi is: " + bmi);                      
+                System.out.println("Your bmi is: " + bmi); 
+                
+                if(bmi < 18.5)
+                {
+                        System.out.println("Underweight");
+   
+                }else if(bmi >= 18.5 && bmi < 24.9)
+                {
+                        System.out.println("Good weight");
+        
+                }else if(bmi >= 25.0 && bmi < 29.9)
+                {
+                        System.out.println("Overweight");
+                }else if(bmi >= 30.0 && bmi < 34.9)
+                {
+                        System.out.println("Overweight I");
+                }else if(bmi >= 35.0 && bmi < 39.9)
+                {
+                        System.out.println("Overweight II");
+                }else if(bmi >= 40)
+                {
+                        System.out.println("Overweight III");
+                }
+                                                     
         }       
 }
