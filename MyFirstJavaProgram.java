@@ -3,7 +3,7 @@ import java.lang.Character;
 
 public class MyFirstJavaProgram
 {
-        
+                     
         public static void main(String []args)
         {       
                 //variable for Dog's age
@@ -18,16 +18,10 @@ public class MyFirstJavaProgram
                 //first object person1
                 System.out.println("Enter name: ");
                 Scanner name_reader = new Scanner(System.in);
-                name =  name_reader.nextLine();
-
-                //checking if the first letter of name is Uppercase
-                if(Character.isUpperCase(name.charAt(0)))
-                {
-                        System.out.println("yes");        
-                }else
-                {
-                        System.out.println("no");
-                }
+                name = name_reader.nextLine();
+                
+                //Capitalize first letter of name if first letter is lowercase                                
+                name = name.substring(0,1).toUpperCase() + name.substring(1).toLowerCase();        
 
                 Person person1 = new Person(name, 17);
 
