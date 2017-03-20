@@ -11,8 +11,14 @@ public class MyFirstJavaProgram
                 //variables for height and weight 
                 double height, weight;                       
             
+                //variable for user's name
+                String name;
+
                 //first object person1
-                Person person1 = new Person("Peter", 17);
+                System.out.println("Enter name: ");
+                Scanner name_reader = new Scanner(System.in);
+                name =  name_reader.nextLine();
+                Person person1 = new Person(name, 17);
 
                 //Entry for height and weight
                 
