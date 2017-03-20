@@ -1,4 +1,5 @@
 import java.util.*;
+import java.lang.Character;
 
 public class MyFirstJavaProgram
 {
@@ -18,6 +19,16 @@ public class MyFirstJavaProgram
                 System.out.println("Enter name: ");
                 Scanner name_reader = new Scanner(System.in);
                 name =  name_reader.nextLine();
+
+                //checking if the first letter of name is Uppercase
+                if(Character.isUpperCase(name.charAt(0)))
+                {
+                        System.out.println("yes");        
+                }else
+                {
+                        System.out.println("no");
+                }
+
                 Person person1 = new Person(name, 17);
 
                 //Entry for height and weight
