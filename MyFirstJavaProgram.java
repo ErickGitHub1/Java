@@ -17,7 +17,8 @@ public class MyFirstJavaProgram
                 
                 Calendar calendar = new Calendar();
                 calendar.getDay();
-
+                calendar.getYear();
+                
                 //first object person1
                 System.out.println("Enter name: ");
                 Scanner name_reader = new Scanner(System.in);
