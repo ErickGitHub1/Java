@@ -14,6 +14,8 @@ public class MyFirstJavaProgram
             
                 //variable for user's name
                 String name;
+                
+                Calendar calendar = new Calendar();
 
                 //first object person1
                 System.out.println("Enter name: ");
