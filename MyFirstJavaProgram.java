@@ -18,6 +18,7 @@ public class MyFirstJavaProgram
                 Calendar calendar = new Calendar();
                 calendar.getDay();
                 calendar.getYear();
+                calendar.isLeap(2017);
                 
                 //first object person1
                 System.out.println("Enter name: ");
