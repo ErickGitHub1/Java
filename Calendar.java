@@ -1,5 +1,6 @@
-import java.util.Date;
+import java.util.*;
 import java.text.SimpleDateFormat;
+import java.time.Year;
 
 public class Calendar
 {
@@ -14,5 +15,13 @@ public class Calendar
 		{
 			SimpleDateFormat format = new SimpleDateFormat("E");
 			System.out.println("Day is: "  + format.format(date));
+		}
+		
+		public void getYear()
+		{				
+			int year;			
+			GregorianCalendar gcalendar = new GregorianCalendar();
+			year = gcalendar.get(GregorianCalendar.YEAR);
+			System.out.println(("Year:" + year));
 		}
 }
