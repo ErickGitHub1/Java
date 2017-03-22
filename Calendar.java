@@ -1,11 +1,18 @@
 import java.util.Date;
+import java.text.SimpleDateFormat;
 
 public class Calendar
 {
+	    private Date date = new Date();
 		// Constructor
 		public Calendar()
 		{
-				Date date = new Date();
-				System.out.println("Dzisiejsza data to: " + date);
+				System.out.println("Date: "  + date);
+		}
+		
+		public void getDay()
+		{
+			SimpleDateFormat format = new SimpleDateFormat("E");
+			System.out.println("Day is: "  + format.format(date));
 		}
 }
