@@ -16,6 +16,7 @@ public class MyFirstJavaProgram
                 String name;
                 
                 Calendar calendar = new Calendar();
+                calendar.getDay();
 
                 //first object person1
                 System.out.println("Enter name: ");
